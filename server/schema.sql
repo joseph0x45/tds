@@ -3,7 +3,7 @@ create table devices (
   version text not null,
   model text not null,
   number text not null, -- the phone number inside the device
-  data_on_number integer not null default 0
+  data_amount integer not null default 0
 );
 
 create table users (
