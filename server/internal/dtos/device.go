@@ -6,7 +6,3 @@ type DeviceRegistration struct {
 	Model   string `json:"model" db:"model"`
 	Number  string `json:"number" db:"number"`
 }
-
-func (d *DeviceRegistration) Validate() error {
-	return nil
-}
