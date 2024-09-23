@@ -9,7 +9,7 @@ type Device struct {
 	Version    string `json:"version" db:"version"`
 	Model      string `json:"model" db:"model"`
 	Number     string `json:"number" db:"number"`
-	DataAmount string `json:"data_amount" db:"data_amount"`
+	DataAmount int    `json:"data_amount" db:"data_amount"`
 }
 
 type DevicePosition struct {

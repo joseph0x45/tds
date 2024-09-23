@@ -33,3 +33,8 @@ create table device_positions (
   logged_at timestamp not null default now(),
   primary key (device_id, logged_at)
 );
+
+create table admins (
+  username text not null primary key,
+  password text not null
+);
