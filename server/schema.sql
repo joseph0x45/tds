@@ -13,6 +13,12 @@ create table users (
   password text not null
 );
 
+create table sessions (
+  id text not null primary key,
+  user_id text not null references users(id),
+  valid boolean not null default true
+);
+
 create table subscriptions (
   id text not null primary key,
   user_id text not null references users(id),
